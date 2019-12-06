@@ -4,7 +4,7 @@ export const projects: {}[] = [
         description: `A school management system for high schools in Kenya. Provides record management for students, teachers,
         fee payments and streamed classes. Integrated with Email and SMS.`,
         progress: '95%',
-        url: 'educate.netlify.com',
+        url: 'https://educate.netlify.com',
         github: 'https://github.com/ndukuwamalwa/school',
         technologies: 'Node.js, Angular, Sass, MySQL, API Integration'
     },
