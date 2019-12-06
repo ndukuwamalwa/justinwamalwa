@@ -1,0 +1,76 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    background-color: rgba(0, 0, 0, 0.904);
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 3rem 0;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            opacity: .8;
+            transition-property: all;
+            transition-duration: 400ms;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 900px) {
+    footer {
+        section {
+            flex-wrap: nowrap;
+
+            a {
+                i {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 809px) and (min-width: 479px) {
+    footer {
+        section {
+            flex-wrap: nowrap;
+
+            a {
+                i {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    footer {
+        section {
+            flex-wrap: wrap;
+
+            a {
+                i {
+                    font-size: 2.6rem;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

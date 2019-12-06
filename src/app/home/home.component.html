@@ -1,0 +1,28 @@
+<app-header></app-header>
+<main>
+    <div class="project" *ngFor="let project of projects">
+        <span class="title">{{project?.title}}</span>
+        <p>{{project?.description}}</p>
+        <hr>
+        <table>
+            <tr>
+                <td>Progress</td>
+                <td>{{project?.progress}}</td>
+            </tr>
+            <tr>
+                <td>Url</td>
+                <td><a [href]="project?.url" target="_blank">{{project?.title}}</a></td>
+            </tr>
+            <tr>
+                <td>Github</td>
+                <td><a [href]="project?.github">View</a></td>
+            </tr>
+            <tr>
+                <td>Technologies</td>
+                <td>{{project?.technologies}}</td>
+            </tr>
+        </table>
+    </div>
+    
+</main>
+<app-footer></app-footer>
